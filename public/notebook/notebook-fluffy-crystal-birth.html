@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+<!-- 
+feel free to remove all of this!
+---
+template coded by doqmeat.
+---
+live preview: https://doqmeat.com/notebook/F2U/preview/notebook
+---
+more html and css resources @ https://www.w3schools.com/ +  https://developer.mozilla.org/en-US/docs/Learn/HTML
+---
+more resources + graphics links can be found here if you need some pointers https://doqmeat.com/notebook
+---
+feel free to contact me for any questions! -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>notebook template</title>
+	<link rel="icon" type="image/x-icon" href="IMG-URL-FOR-FAVICON">
+	<style>
+		html {
+			/* feel free to delete this if you just want the normal cursor! */
+			cursor: cell;
+			scrollbar-color: #c5dca0 #add8e6;
+			/*			scrollbar for firefox users*/
+		}
+
+		body {
+			background: lightblue;
+			margin: 0px;
+			word-wrap: break-word;
+			font-size: 19px;
+			line-height: 25px;
+			word-spacing: 4px;
+			font-family: ms pgothic, arial;
+			/* ms pgothic is not compatible with safari or mobile devices*/
+			color: black;
+		}
+
+		mark {
+			background: lightgoldenrodyellow;
+		}
+
+		#wrapper-index {
+			/* the notebook's cover */
+			background: lightgrey;
+			position: relative;
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 35px;
+			width: 1108px;
+			padding: 20px 10px 15px 10px;
+			border-radius: 20px;
+			border: 1px solid black;
+		}
+
+		/*this is my ugly binder spiral! feel free to remove it or change it. it wont mess the rest of the code! */
+		#tab1-wrapper:after,
+		#tab2-wrapper:after,
+		#tab3-wrapper:after,
+		#tab4-wrapper:after,
+		#tab5-wrapper:after,
+		#tab6-wrapper:after,
+		#tab7-wrapper:after,
+		#tab8-wrapper:after {
+			content: url(https://files.catbox.moe/4v6k8c.png);
+			position: absolute;
+			z-index: 10;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			pointer-events: none;
+		}
+
+		/* PAGES CSS */
+
+		.paper {
+			/*the CSS of both "pages" boxes. you can choose the look of ALL pages here */
+			background: url(https://files.catbox.moe/evxip4.png);
+			z-index: 5;
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			border: 1px solid lightblue;
+			height: 600px;
+		}
+
+		.left {
+			width: 490px;
+			margin-left: 50px;
+			margin-right: 10px;
+			border-radius: 10px 0px 0px 10px;
+			overflow: hidden;
+		}
+
+		.left-in {
+			/*			the main purpose of this class if so the scrollbar of left pages arent obscured by the bind spiral */
+			padding: 15px 10px 15px 25px;
+			height: 100%;
+			margin-right: 15px;
+			overflow: auto;
+		}
+
+		.right {
+			padding: 15px 25px;
+			width: 490px;
+			margin-left: 10px;
+			border-radius: 0px 10px 10px 0px;
+			overflow: auto;
+		}
+
+		/* you can also customize the look of SPECIFIC pages. take TAB 2 for example: */
+
+		#tab2-p {
+			font-family: consolas;
+			font-size: 14px;
+			background: url(https://files.catbox.moe/bdbuwr.png);
+			border-color: lightcoral;
+		}
+
+		/* tab buttons CSS stuff */
+
+		.tab {
+			/* for the ones on the left */
+			width: 590px;
+			height: 50px;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			rotate: -90deg;
+			top: -10px;
+			left: -232px;
+		}
+
+		.tab2 {
+			/* for the ones on the right */
+			width: 590px;
+			height: 50px;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			rotate: 90deg;
+			top: 590px;
+			right: -232px;
+		}
+
+		.tab button,
+		.tab2 button {
+			/*this is the look of the TABS! */
+			z-index: 1;
+			position: relative;
+			vertical-align: top;
+			width: 120px;
+			margin: 0px 8px;
+			padding: 10px 0px 30px 0px;
+			font-family: newpenji, ms pgothic;
+			border: none;
+			cursor: help;
+			font-size: 19px;
+			transition-duration: 0.5s;
+			top: 10px;
+			border-radius: 10px 10px 0 0;
+			border: 1px solid grey;
+		}
+
+		/* here you can change the color of each individual TAB button*/
+		.tab1-b {
+			background: #C5DCA0;
+		}
+
+		.tab2-b {
+			background: #B6A7DC;
+		}
+
+		.tab3-b {
+			background: #F9DAD0;
+		}
+
+		.tab4-b {
+			background: #F5F2B8;
+		}
+
+		.tab5-b {
+			background: #F1B46A;
+		}
+
+		/* hover effect of TAB*/
+		.tab button:hover,
+		.tab2 button:hover {
+			top: 0px;
+			cursor: -webkit-grab;
+			cursor: grab;
+		}
+
+		/* selected TAB effect aka when its focused */
+		.tab button.active,
+		.tab2 button.active {
+			top: 0px;
+			cursor: -webkit-grabbing;
+			cursor: grabbing;
+			box-shadow: 1px 1px 20px 1px grey;
+			outline: none;
+		}
+
+		/* custom scrollbar for chrome users, firefox users cant see this */
+		::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		::-webkit-scrollbar-thumb:vertical {
+			background: white;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+
+		::-webkit-scrollbar-thumb:horizontal {
+			background: white;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+
+		::-webkit-scrollbar-track {
+			border-radius: 10px;
+			background: transparent;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- 	NOTEBOOK wrapper -->
+	<div id="wrapper-index">
+
+		<!-- 	TAB 1 wrapper -->
+		<div id="tab1-wrapper" class="tabcontent">
+			<div id="tab1-p" class="paper left">
+				<div class="left-in">
+					<p>Fluffy Pastel, the gentle pastel-colored pegasus with wings that shimmered like soft rainbows, was exploring the edge of the enchanted forest for the ethereal crystals in the quiet morning of the current world. The sun was just beginning to rise, casting a warm golden glow over the land. As she fluttered between trees, she noticed something strange in the distance an opening in the side of a hill, barely visible behind thick vines and moss. Curious, she glided closer to investigate.</p>
+					<p>As she approached, she realized it was a cave entrance, hidden and secretive, almost as if it were waiting for someone to discover it. With a heart full of wonder, Fluffy Pastel stepped carefully inside, her hooves tapping lightly on the cool stone floor. The air inside was fresh but tinged with an earthy scent, and the cave walls glittered faintly with streaks of crystals embedded deep in the rock.</p>
+					<p>Her lavender eyes sparkled as she ventured deeper into the cave, following the soft glow that illuminated the path ahead. The further she went, the more the cave seemed to come alive. Suddenly, she saw something that made her heart skip a beat a large, glowing ethereal ruby crystal embedded in the cave floor, pulsing gently with light. It was beautiful, shimmering with shades of bloody red, its surface sparkling like stars in the night sky.</p>
+					<p>Fluffy Pastel’s wings fluttered with excitement. She had never seen anything so magical before. The crystal seemed to hum with energy, as if it were calling to her. Gently, she lowered her head and touched it with her soft nose. The moment she made contact, a wave of warmth and light filled her body, and she felt a sense of peace unlike anything she had ever known.</p>
+
+					<!-- TAB 1 left paper end divs -->
+				</div>
+			</div>
+			<div id="tab1-p" class="paper right">
+				<p>As she cradled the crystal in her wings, a soft rumbling sound echoed through the cave. She looked up, startled, and gasped. Right before her eyes, another crystal began to form. It glowed brightly, its light brighter and more radiant than the first. The air shimmered with magic as the second crystal floated gently from the earth, casting sparkling beams of light across the cave walls.</p>
+				<p>Fluffy Pastel watched in awe, her wings fluttering in disbelief. She had been lucky to witness something truly rare the birth of a ethereal crystal. It was as though the magic of itself was sharing its secrets with her.</p>
+				<p>She slowly reached out and touched the second crystal with the tip of her wing. As she did, a soft, soothing energy filled her, and she felt a deep connection to the ethereal magic and its mysteries. The crystal seemed to whisper to her, sharing its ancient power.</p>
+				<p>With the two glowing crystals nestled safely in her wings, Fluffy Pastel smiled softly, knowing this was a moment she would never forget. She had discovered more than just crystals; she had discovered a hidden part of the world’s magic.</p>
+				<p>Before leaving the cave, Fluffy Pastel paused to take one last look at the sparkling walls, the light from her crystals dancing across them in beautiful patterns. As she flew back into the sunlight, she felt the weight of her discovery, and she knew that she would return one day to explore more of the cave’s wonders. Until then, she would carry the magic of the crystals with her, a reminder of the day she found something truly extraordinary in the heart of the cave.</p>
+
+				<!-- TAB 1 right paper end divs -->
+				</div>
+
+
+		<!-- TEMPLATE for new set of TAB pages that you can copypaste
+
+	<div id="tab[num]-wrapper" class="tabcontent">
+	<div id="tab[num]-p" class="paper left">
+ <div class="left-in">
+		text goes here
+
+		</div></div>
+	<div id="tab[num]-p" class="paper right">
+		text goes here
+
+	</div></div>
+
+-->
+
+		<!-- NOTEBOOK wrapper end div -->
+	</div>
+</body>
+
+</html>

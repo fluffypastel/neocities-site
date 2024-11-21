@@ -1,0 +1,907 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="credit" content="base by weiman, instagram base by minna, cameraroll taken from templatesss and updated with hover by tentacool, everything else and updated to iOS 11 by morley">
+
+
+<title>phone</title>
+<link rel="shortcut icon" href="https://i.imgur.com/zkgCrD3.png">
+
+<link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+/* ---- GENERAL ---- */
+
+p {
+    text-indent: 10px;
+}
+
+body {
+  background-color:#ffffba;
+  overflow: hidden;
+    
+}
+
+#container {
+  width: 450px;
+  height: 500;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: transparent;
+}
+
+#s-m-t-tooltip {
+  max-width:200px;
+  padding:3px 5px;
+  margin:5px 0px 0px 5px;
+  background-color: rgba(250, 250, 250, 0.8);
+  font-family: helvetica, sans-serif;
+  font-size:8pt;
+  font-weight:light;
+  letter-spacing:+1px;
+  text-transform:uppercase;
+  text-align: justify;
+  color:#000;
+  z-index:999999999999999999;
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(192, 192, 192, 1);
+}
+
+html, a, a:hover {
+  cursor:url(http://i.imgur.com/ONVDMqu.png), default;
+}
+
+#options {
+  float: left;
+  margin-top:150;
+  height:610;
+  width:130;
+}
+
+#telephone {
+  float: right;
+  height:610;
+  overflow: hidden;
+  width:292;
+}
+
+.icons {
+  width:50;
+  padding:5px;
+}
+
+
+
+/*
+WHITE PHONE - https://i.imgur.com/zWl7dfF.png
+BLACK PHONE - https://i.imgur.com/ko1Eftl.png
+REPLACE LINK BELOW WITH LINK YOU WANT
+*/
+.phone {
+  background: url(https://i.imgur.com/ko1Eftl.png) no-repeat;
+  width: 292;
+  height: 610;
+  overflow: hidden;
+}
+
+
+/*
+THIS IS THE INSIDE OF YOUR PHONE SCREEN
+THIS CAN BE ANY IMAGE YOU WANT RESIZED TO 256x465
+*/
+#inside {
+  background: url(wallpaper.png) no-repeat;
+  display: inline-block;
+  position: absolute;
+  visibility:visible;
+  margin-left:18px;
+  top:101px;
+  overflow:hidden;
+  z-index:-2;
+  width:256px;
+  height:465px;
+  }
+  
+  textarea {
+  outline: none;
+  resize: none;
+  }
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  width: 253;
+  height: 462;
+  margin: 0;
+  padding: 1px;
+  display: none;
+  overflow: hidden;
+  background-color: #000;
+  margin: 71 0 0 176;
+  position: fixed;
+  
+}
+
+
+/* ---- VOICEMAIL ---- */
+.vmcontent {
+  width: 256;
+  height: 345;
+  overflow: auto;
+  margin: 0;
+  padding:2px;
+  background-color: #fff;
+  font-family: helvetica, arial, sans serif;
+  font-size:12px;
+  line-height:14px;
+  text-transform:none;
+  text-align:left;
+}
+
+.vmheader {
+  margin: 0;
+  height: 65;
+  width: 254;
+  padding:3px;
+  background-color: #f2f2f4;
+  font-family: helvetica, arial, sans serif;
+  font-size:12px;
+  font-weight:bold;
+  text-align: center;
+  text-transform: none;
+  border-bottom:1px solid #ccc;  
+}
+
+.vmsender {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  height:30;
+}
+
+.vmfrom {
+  padding-left:5;
+  padding-right:5;
+  font-size:13px;
+  color: #000;
+  float: left;
+  font-weight:bold;
+}
+
+.vmstats {
+  padding-left:5;
+  padding-right:5;
+  padding-bottom:5;
+  font-size:12px;
+  color: #8f8e94;
+  float: left;
+}
+
+.vminfo {
+  float: right;
+  margin-top:-15px;
+}
+
+.vmplay {
+  padding:5px;
+  height:15;
+  margin-top:0px;
+  font-size:11px;
+  margin-bottom:10px;
+  color:#8f8e94;
+}
+
+.vmbuttons {
+  padding-left:10;
+  padding-right:15;
+  font-size:12px;
+  font-weight: none;
+  text-align:center;
+  margin-bottom:10px;  
+}
+
+.vmbreak {
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  width: 85%;
+  background-color: #ececec;
+}
+
+.vmtranscript {
+  padding:10px;
+  padding-top:10px;
+  color:#8f8e94;
+}
+
+.vmbottom {
+  height:36px;
+  width:256px;
+  background:#F1F1F3;
+  padding-top:5px;
+  border-top:1px solid #ccc;
+  margin: 0;
+}
+
+/* ---- NOTES ---- */
+.notesheader {
+  height: 25;
+  width: 256;
+  padding-top: 5px;
+  background-color: #f7f7f7;
+  font-family: helvetica, arial, sans serif;
+  font-size:12px;
+  font-weight:bold;
+  text-transform:;
+  color: #e4af0a;
+}
+
+.notescontent {
+  width: 234;
+  height: 407;
+  padding-left:10px;
+  padding-right:10px;
+  overflow: auto;
+  background-color: #f7f7f7;
+  font-family: helvetica, arial, sans serif;
+  color: #454545;
+  font-size:12px;
+  font-weight:normal;
+  line-height:14px;
+  text-transform:none;
+  text-align:left;
+}
+
+.notesbottom {
+  height:25px;
+  background:#222326;
+  text-align:center;
+  margin:0;
+}
+
+/* ---- MUSIC (UPDATED 25/07/16) ---- */
+.musicheader {
+  margin: 0;
+  height: 55;
+  width: 248px;
+  padding:3px;
+  background-color: #181818;
+  color:#fff;
+  font-family: arial, roboto;
+  font-size:12px;
+  font-weight:bold;
+  text-align:center;
+  text-transform: none;  
+}
+.musiccontent {
+  width: 254;
+  height: 350px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #181818;
+  font-family: helvetica, arial, sans serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+a {color: #fff; text-decoration: none;
+}
+  
+.musictitle {
+  padding-left:5;
+  background-color: #181818;
+  color: #fff;
+  font-family: arial;
+  font-size:13px;
+  text-transform: none;
+}
+.musicbottom {
+  height:55px;
+  width:248px;
+  padding:3px;
+  color: #fff;
+  font-family:arial;
+  font-size:12px;
+  background:#222326;
+  text-align:center;
+  border-top:1px solid #888;
+  margin: 0;
+}
+
+/* ---- INSTAGRAM (ADDED 25/07/16) ---- */
+.instacontent {
+  width: 258;
+  height: 400;
+  overflow: auto;
+  margin: 0;
+  padding:2px;
+  background-color: #fff;
+  font-family: helvetica, arial, sans serif;
+  font-size:12px;
+  line-height:14px;
+  text-transform:none;
+  text-align:left;
+}
+
+.instaheader {
+  margin: 0;
+  height: 25;
+  width: 250;
+  padding:3px;
+  background-color: #FAFAFA;
+  font-family: grand hotel;
+  font-size:20px;
+  font-weight:bold;
+  text-align: center;
+  text-transform: none;
+  border-bottom:1px solid #ccc;  
+}
+
+.instauser {
+  height: 25;
+  padding-left: 10px;
+  width: 225;
+  background-color: #fff;
+  font-family: roboto;
+  font-size: 11px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.instapic {
+  margin: 0;
+  padding-bottom: 5px;
+  overflow: none;
+}
+
+.instabar {
+  padding-right: 3px;
+  border-bottom: 1px solid #ccc;
+  overflow: none;
+}
+
+.instafriends{
+  width: 235;
+  padding-left: 10px;
+  padding-top: 6px;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-family: roboto;
+  font-size: 11px;
+  overflow: none; !important
+ 
+}
+
+.instacaption{
+  width: 235;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-family: roboto;
+  font-size: 11px;
+  overflow: none; !important
+
+}
+
+.instacomment{
+  width: 235;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-family: roboto;
+  font-size: 11px;
+  overflow: none; !important
+}
+
+.instatime{
+  width: 235;
+  padding-left: 10px;
+  color: #ccc;
+  font-size: 8px;
+  font-family: roboto;
+  overflow: none; !important
+}
+
+.instafooter {
+  height:30px;
+  width:258px;
+  background:#f7f7f7;
+  padding-top:0px;
+  border-top:1px solid #ccc;
+  margin: 0;
+}
+
+/* ---- TEXT ---- */
+.textcontent {
+  width: 250;
+  height: 361;
+  overflow: auto;
+  margin: 0;
+  padding:2px;
+  background-color: #fff;
+  font-family: helvetica, arial, sans serif;
+  font-size:12px;
+  line-height:14px;
+  text-transform:none;
+  text-align:left;
+}
+
+.textfrom {
+  margin:10px 20px 10px 10px;
+  width:80%;
+  padding-left:4px;
+  background:url('https://i.imgur.com/bCM6Iww.png')bottom left no-repeat;
+}
+
+.textfrom2 {
+  background:#E5E5EA;
+  padding:5px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+}
+
+.textto {
+  margin:10px 10px 10px 40px;
+  width:80%;
+  padding-right:4px;
+  background:url('https://i.imgur.com/TvzLmoA.png')bottom right no-repeat;
+}
+
+.textto2 {
+  background:#00A7FF;
+  color: #ffffff;
+  padding:5px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+}
+
+.imgfrom {margin:10px 20px 10px 10px;}
+
+.imgto {margin:10px 10px 10px 90px;}
+
+.textheader {
+  margin: 0;
+  height: 50;
+  width: 248;
+  padding:3px;
+  background-color: #f9f9f9;
+  font-family: helvetica, arial, sans serif;
+  font-size:12px;
+  font-weight:;
+  text-align:center;
+  text-transform: none;
+  border-bottom:1px solid #ccc;  
+}
+
+.textbottom {
+  height:35px;
+  width:254px;
+  background:#fff;
+  padding-top:5px;
+  border-top:1px solid #ccc;
+  margin: 0;
+}
+
+.textcompose {
+  font-family: helvetica,arial,sans-serif;
+  font-size:12px;
+  line-height:20px;
+  width:165px;
+  height:25px;
+  margin-left:5px;
+  padding-left:5px;
+  border:none;
+  -webkit-border-radius:7px;
+  border-radius:10px;
+  -webkit-box-shadow:inset 0 0 3px 1px #bbb;
+  box-shadow:inset 0 0 3px 1px #bbb;
+}
+
+.textbutton {
+  float:left;
+  width:45px;
+  background:;
+  text-align:center;
+  font-size: 11px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:5px;
+  height:25px;
+  line-height:25px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:#fff;
+  text-shadow:1px 1px 0 #444;
+  font-family: helvetica, arial, sans serif;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/* ---- CAMERAROLL ---- */
+
+.cameraheader {
+  margin: 0;
+  height: 35px;
+  width: 252px;
+  padding:3px;
+  background-color: #f2f2f4;
+  font-family: helvetica neue, roboto;
+  font-size:12px;
+  font-weight:bold;
+  text-align:center;
+  text-transform: none;
+  border-bottom: 1px solid #ccc;  
+}
+
+.cameracontent {
+  width: 252px;
+  height: 378px;
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 1px;
+  padding-top: 6px;
+  background-color: #fff;
+  text-transform:none;
+  font-family: helvetica neue, roboto;
+  font-size: 12px;
+  text-align:left;
+  position: relative;
+}
+
+.camerabottom {
+  margin: 0;
+  height: 30px;
+  width: 252px;
+  padding:3px;
+  background-color: #f2f2f4;
+  font-family: helvetica neue, roboto;
+  font-size:9px;
+  font-weight:normal;
+  text-align:left;
+  text-transform: none;
+  color: #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.zoom {
+  transition: transform .6s; /* Animation */
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+</style>
+
+
+<!-- THIS IS THE SCRIPT FOR A FANCY HOVER -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+    $(document).ready(function(){
+    $("a[title]").style_my_tooltips({
+    tip_follows_cursor:true,
+    tip_delay_time:90,
+    tip_fade_speed:600,
+    attribute:"title"
+    });
+    });
+    })(jQuery);
+    </script>
+
+<!-- THIS IS THE SCRIPT FOR YOUR BOXES APPEARING AND HIDING; MAKE SURE TO EDIT THIS ACCORDING TO HOW MANY LINKS/BOXES YOU NEED -->
+<script src="http://code.jquery.com/jquery-1.10.0.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $(".one").click(function(){
+    $(".a").toggle();
+    $(".b,.c,.d,.e,.f,.g,.h").hide();
+  });
+  $(".two").click(function(){
+    $(".b").toggle();
+    $(".a,.c,.d,.e,.f,.g,.h").hide();
+  });
+  $(".three").click(function(){
+    $(".c").toggle();
+    $(".d,.e,.f,.g,.h,.a,.b").hide();
+  });
+  $(".four").click(function(){
+    $(".d").toggle();
+    $(".e,.f,.g,.h,.a,.b,.c").hide();
+  }); 
+  $(".five").click(function(){
+    $(".e").toggle();
+    $(".f,.g,.h,.a,.b,.c,.d").hide();
+  });   
+  $(".six").click(function(){
+    $(".f").toggle();
+    $(".e,.d,.g,.h,.a,.b,.c").hide();
+  }); 
+  $(".seven").click(function(){
+    $(".g").toggle();
+    $(".e,.d,.f,.h,.a,.b,.c").hide();
+  }); 
+  $(".eight").click(function(){
+    $(".h").toggle();
+    $(".e,.f,.g,.d,.a,.b,.c").hide();
+  });    
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+<div id="options">
+    
+    <!--
+    THESE ARE YOUR SIDE ICONS TO ADD MORE JUST C/P 
+    MORE LINES AND CHANGE THE NUMBER CLASSES UP TO 
+    EIGHT WHEN C/PING THE DIV CLASS INFO BELOW USE 
+    THE CORRESPONDING LETTER ONE-A TWO-B THREE-C ETC 
+    -->
+    
+<a href="#" class="one"  title="notes"><img src="https://i.imgur.com/G8nnT7X.png" class="icons"></a>
+<a href="#" class="two" title="voicemail"><img src="https://i.imgur.com/NIZfEAi.png" class="icons"></a>
+<a href="#" class="three" title="text messages"><img src="https://i.imgur.com/k66T2ZW.png" class="icons"></a>
+<a href="#" class="four" title="instagram"><img src="http://i.imgur.com/HhJIwpb.png" class="icons"></a>
+<a href="#" class="five" title="spotify"><img src="http://i.imgur.com/cqcQEeG.png" class="icons"></a>
+<a href="#" class="six" title="camera roll"><img src="https://i.imgur.com/hUThws9.png" class="icons"></a>
+<BR>
+</div>
+
+<div id="telephone">
+<div class="phone"></div>
+<div id="inside"></div>
+</div>
+  
+<!--SECTION-->
+<div class="a">
+<div class="notesheader">
+<div style="float:left; padding-left: 5px;"><img src="http://i.imgur.com/BydvA4W.png" width="10" align="left">Notes</div>
+<div style="float:right;"><img src="http://i.imgur.com/rbuquCf.png" width="40" align="right" style="padding-right:15px;"></div></div>
+<div class="notescontent"><center><small><font color=#aeaeae>January 24, 2018 at 7:17 PM</font></small></center><br>
+<b>IMPORTANT LIST</b><br><br>
+<p>Give to Mikuś my ruby Ethereal crystals...
+
+<p>Ask Sherlie and Dabby about some help with broken EtherOS phone after an update and change of the crushed screen.
+
+<p>Go to Lillia with Camellia to the party of Star Dawn cat, a mother of Mikuś.
+</div>
+<div class="notesbottom"><img src="https://i.imgur.com/zE93rqN.png" width="256"></div>
+</div>
+<!--/SECTION-->
+
+<!--SECTION-->
+<div class="b">
+<div class="vmheader">
+<div style="float:left; margin-left:10px;">
+<font style="color:#ccc; font-weight:normal;">PurrEMG</font>
+</div>
+<div style="float:right; margin-right: 10px;"><font style="color:#ccc; font-weight:normal;">Stable Signal</font>
+</div>
+<br><br>
+<div style="float:left; margin-left:10px;">
+<font style="font-size:25px;">Voicemail</font></div>
+</div>
+<div class="vmcontent">
+<div class="vmsender">
+<div class="vmfrom">Brim Stream</div>
+<br>
+<div class="vmstats">Alterversum
+<br>
+January 25, 2018 at 11:35 PM
+</div>
+
+<div class="vminfo"><img src="https://i.imgur.com/jeCINSJ.png" width=45></div>
+</div>
+<br>
+<div class="vmtranscript">
+Hey pastel friend, I have learned a new nice magical stuffs with my quartz crystal! Now I can make the fluff fluffier of other creatures as also I can create portals! I am so happy, hope you doing fine there!
+</div>
+
+<div class="vmplay">
+<img src="https://i.imgur.com/vVeCKU7.png" width="245">
+<div style="float:left; margin-top:-10px; margin-left:20px; position: absolute; z-index: 1;">0:00</div><div style="float:right; margin-top:-10px; margin-left:210px; position:absolute; z-index:2;">-0:26</div>
+</div>
+<div class="vmbuttons">
+<div style="float:left;"><font style="color:#007aff;">Speaker</font></div><font style="color:#007aff;">Call Back</font><div style="float:right;"><font style="color:#ff3a31;">Delete</font></div>
+</div>
+<div class="vmbreak"></div>
+</div>
+
+<div class="vmbottom"><img src="https://i.imgur.com/EW7yRj3.png" width=256></div>
+
+</div>
+<!--/SECTION-->
+
+<!--SECTION-->
+<div class="c">
+<div class="textheader">
+
+<div style="float:left; margin-right:10px;">
+<img src="https://i.imgur.com/uhIJvnw.png" align=left></div>
+<img class="img-circle" src="msgicon.png" width="30">
+<div style="float:right;"><img src="https://i.imgur.com/T2hdNX4.png" align=right></div>
+<div style="center; margin-top:2px;">Fluffy Pastel from Quaarversum</div>
+</div>
+
+<div class="textcontent">
+<div class="textfrom"><div class="textfrom2">
+Thank you for helping me Flufster!!! I can finally fix my device with Xenia :3
+</div></div>
+        
+<div class="imgfrom">
+<img src="msg1.gif" width="150">
+</div>
+
+<div class="textto"><div class="textto2">
+No worries, I can help you with other stuffs too laters if ya wantsie!
+</div></div>
+
+<div class="textto"><div class="textto2">
+By the ways this is my new look
+</div></div>
+
+<div class="imgto">
+<img src="msg2.png" width="150">
+</div>
+
+<div class="textfrom"><div class="textfrom2">
+Oh wow it looks awesome!
+</div></div>
+
+<div class="textto"><div class="textto2">
+Yeee I am replacing now Dubstep Pastel because she's sick and her Phonk Mikuś likes me a lot too.
+</div></div>
+ 
+<div class="textfrom"><div class="textfrom2">
+Oh nuuu I thought Dubstep will be streaming music..
+</div></div>
+
+<div class="textfrom"><div class="textfrom2">
+Anyways what channel on Ethereal TV will you stream?
+</div></div>
+
+<div class="textto"><div class="textto2">
+It will be channel 129:2 because on 129:0 and 129:1 there is already some stream reserved..
+</div></div>
+
+<div class="textfrom"><div class="textfrom2">
+Okiii I will wait!! ^^
+</div></div>
+
+</div>
+<div class="textbottom">
+<textarea placeholder="iMessage" class="textcompose"></textarea><div class="textbutton"><img src="https://i.imgur.com/VQqiBgI.png"></div>
+</div></div>
+<!--/SECTION-->
+
+<!--SECTION-->
+<div class="d">
+<div class="instaheader">
+<div style="float:left; margin-right:-5px;">
+<img src="https://i.imgur.com/JytozMg.png" height="15" style="padding-top: 6px; padding-left: 5px;" align="left">
+</div>
+<font style="color:#000;">Ponygram</font>
+<div style="float:right;"><img src="https://i.imgur.com/qACjKUj.png" height="15" style="padding-top: 6px; padding-right: 5px;" align="right">
+</div>
+</div>
+<div class="instacontent">
+
+<!--instagram post-->
+<div class="instauser"><img src="rafflepastel.jpg" height="25" style="-webkit-border-radius:100px;" align="left"><div style="padding-left:8px; padding-top:7px;"><b>rafflepastel</b></div></div>
+<div class="instapic"><img src="ig1.png" width="250"></div>
+<div class="instabar"><img src="http://i.imgur.com/juQ8vK8.png" height="18" style="padding-bottom: 7px;"></div>
+<div class="instafriends">liked by <b>starfire, mikusetherlith, marer fluffer</b> and 6 others</div>
+<div class="instacaption"><b>rafflepastel</b> lights of hearts <font color="#125688">#lights #hearts </font></div>
+<div class="instacomment"><font color="#ccc">View all 9 comments</font><br>
+<b>dubsteppastel</b> niceeeee <br>
+<b>mikusiakitty</b> where is that I also want to be there<br>
+</div>
+<div class="instatime">33 MINUTES AGO</div>
+<!--/instagram post-->
+
+<!--instagram post-->
+<div class="instauser"><img src="ig2.png" height="25" style="-webkit-border-radius:100px;" align="left"><div style="padding-left:8px; padding-top:7px;"><b>mikusetherlith</b></div></div>
+<div class="instapic"><img src="ig2.png" width="250"></div>
+<div class="instabar"><img src="http://i.imgur.com/SJOys5Y.png" height="18" style="padding-bottom: 7px;"></div>
+<div class="instafriends">22 likes</div>
+<div class="instacaption"><b>mikusetherlith</b> new avatar by @julkawarrior</div>
+<div class="instacomment"> <font color="#ccc">View all 32 comments</font><br>
+<b>julkawarrior</b> thanks for comm<br>
+<b>fluffypastel</b> <b><font color="#125688">@julkawarrior</font></b> wow you made a nice art! <br>
+</div>
+<div class="instatime">2 HOURS AGO</div>        
+<!--/instagram post-->
+
+
+</div>
+<div class="instafooter"><img src="http://i.imgur.com/p2JoN5g.png" height="30" style="padding-bottom: 11px;"></div>
+</div>
+<!--/SECTION-->
+
+<!--SECTION-->
+<div class="e">
+<div class="musicheader">
+<div style="float:left; margin-right:-5px;">
+<img src="https://i.imgur.com/7x9nadi.png" width=10 align=left style="padding-top: 11px;">
+</div>
+Meowy musiiiic
+<div style="float:right;"><img src="http://i.imgur.com/8vV6Q4J.png?1" align=right style="padding-top: 11px; padding-right: 5px;"></div>
+<br>
+<center><img src="http://i.imgur.com/VoKkbzm.png" width="190"></a></center>
+</div>
+<div class="musiccontent">
+<div class="musictitle">
+
+<a href="https://www.youtube.com/watch?v=Byuhn6hkJbM" target="_blank">I Said Meow</a><br>
+<img src="http://i.imgur.com/vQ2CkX0.png" width="13"><small><font color="#888"> Azazal • Dubstep</font></small> <div style="float:right;"><img src="http://i.imgur.com/m26MfmR.png" width="15" align="right" style="padding-right: 5px;"></div><br><br>
+
+
+</div></div>
+<div class="musicbottom">
+<div style="float:left; margin-right:-5px;"><img src="http://i.imgur.com/3LNstzo.png" width="15" align="left" style="padding-top:5px;"></div>
+<center>I Said Meow • <font color="#888">Azazal</font>
+<div style="float:right;"><img src="http://i.imgur.com/eVWS1Gy.png" width="20" align=right style="padding-right: 5px;"></a></div>
+<img src="http://i.imgur.com/MxAd2eM.png" width="248">
+</center></div>
+</div>
+<!--/SECTION-->
+
+<!--SECTION-->
+<div class="f">
+<div class="cameraheader">
+<div style="float:left; margin-right:-5px;">
+<img src="http://i.imgur.com/nj9rM4t.png" width="11" align="left" style="margin-top: 11px;"> <font style="color:#0072ff; font-weight:normal; position: relative; top: 12px;">Albums</font>
+</div>
+
+<font style="font-family: roboto;font-size: 12px;font-weight: bolder;margin-left: 2px;position: relative;top: 11px;">All Photos</font>
+
+<div style="float:right; margin-right: 5px; position: relative;top: 12px; padding-right:10px;">
+<font style="color:#0072ff; font-weight:normal;">Select</font>
+</div>
+</div>
+
+<div class="cameracontent">
+
+<img src="ig1.png" class="zoom">
+<img src="ig2.png" class="zoom">
+<img src="msg1.gif" class="zoom">
+<img src="msg2.png" class="zoom">
+<img src="msgicon.png" class="zoom">
+<img src="rafflepastel.jpg" class="zoom">
+
+</div>
+<div class="camerabottom">
+<img src="https://i.imgur.com/lWoMU1j.png">
+</div>  
+</div>
+
+<!--/SECTION-->
+
+
+
+</div>
+</body>
+</html>

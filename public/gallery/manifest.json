@@ -1,0 +1,276 @@
+{
+  "info": {
+    "maker": "Melon's Gallery Maker!",
+    "version": "0.0.2",
+    "updated_at": "Thu, 21 Nov 2024 01:34:56 +0000"
+  },
+  "settings": {
+    "title": "Fluffer Gallery!",
+    "info": "My very cool gallery of fluffness!!",
+    "image_size": 1920,
+    "image_compression": 96,
+    "thumbnail_size": 256,
+    "images_per_page": 100,
+    "show_filenames": true,
+    "use_javascript": true,
+    "use_minify": true,
+    "version": "0.0.2"
+  },
+  "images": [
+    {
+      "path": "fluffy/thumbnails/thumb_1455207911114825743-E7Oj0b7VEAUpVDm.jpg",
+      "size": 5102,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "2HNW3XNNQi8pmkK8qtUo1NXaVuw="
+    },
+    {
+      "path": "fluffy/images/1455207911114825743-E7Oj0b7VEAUpVDm.jpg",
+      "size": 111746,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "2HNW3XNNQi8pmkK8qtUo1NXaVuw="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_1455207930718994440-FA9DHPKUYAoAAwx.jpg",
+      "size": 7388,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "sHNLmBXY92bRi8BmhWHGK2bjfU8="
+    },
+    {
+      "path": "fluffy/images/1455207930718994440-FA9DHPKUYAoAAwx.jpg",
+      "size": 189141,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "sHNLmBXY92bRi8BmhWHGK2bjfU8="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_1455208318054674433-E3bzmLLVgAMAcAV.jpg",
+      "size": 11048,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "ytjoKCsTXSmFZZZ3dKI4ooEn2Aw="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_135_20211013152716.jpg",
+      "size": 14569,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "74tyU4JxavM1nROH5rXG0JInn8I="
+    },
+    {
+      "path": "fluffy/images/1455208318054674433-E3bzmLLVgAMAcAV.jpg",
+      "size": 186846,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "ytjoKCsTXSmFZZZ3dKI4ooEn2Aw="
+    },
+    {
+      "path": "fluffy/images/1455208416587272201-FBRmqTNVUAQx4Tp.jpg",
+      "size": 87571,
+      "updated_at": "Thu, 21 Nov 2024 01:34:47 +0000",
+      "source": "zpsfXyhClcdBqLNjkTUE3YBHcTQ="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_1455208416587272201-FBRmqTNVUAQx4Tp.jpg",
+      "size": 11223,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "zpsfXyhClcdBqLNjkTUE3YBHcTQ="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_1467110198091423744-FFw48udXIAE7tAZ.jpg",
+      "size": 8861,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "Tarq1j4V3DE2A1OtZ9u6TRC4gdw="
+    },
+    {
+      "path": "fluffy/images/1467110198091423744-FFw48udXIAE7tAZ.jpg",
+      "size": 143536,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "Tarq1j4V3DE2A1OtZ9u6TRC4gdw="
+    },
+    {
+      "path": "fluffy/images/1471381301777383426-FGtlfmhWYAMjY69.jpg",
+      "size": 50221,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "oqn54ka+I+Z+sjY4EEe5x1sqPK4="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_1471381301777383426-FGtlfmhWYAMjY69.jpg",
+      "size": 7811,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "oqn54ka+I+Z+sjY4EEe5x1sqPK4="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_20210623_202801.jpg",
+      "size": 7084,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "n260GpJ+VHQjj0lofmSE77mfa+g="
+    },
+    {
+      "path": "fluffy/images/20210628_004446.jpg",
+      "size": 140589,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "aM7ZCupUGQ8HOETh1l1i8isq0DA="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_20210628_004446.jpg",
+      "size": 6162,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "aM7ZCupUGQ8HOETh1l1i8isq0DA="
+    },
+    {
+      "path": "fluffy/images/135_20211013152716.png",
+      "size": 251362,
+      "updated_at": "Thu, 21 Nov 2024 01:34:48 +0000",
+      "source": "74tyU4JxavM1nROH5rXG0JInn8I="
+    },
+    {
+      "path": "fluffy/images/20210623_202801.jpg",
+      "size": 868757,
+      "updated_at": "Thu, 21 Nov 2024 01:34:49 +0000",
+      "source": "n260GpJ+VHQjj0lofmSE77mfa+g="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_20210829_114437.jpg",
+      "size": 5584,
+      "updated_at": "Thu, 21 Nov 2024 01:34:49 +0000",
+      "source": "sWvEUlER+9JAodAzcQokQ0DF294="
+    },
+    {
+      "path": "fluffy/images/20210829_114437.jpg",
+      "size": 1152731,
+      "updated_at": "Thu, 21 Nov 2024 01:34:50 +0000",
+      "source": "sWvEUlER+9JAodAzcQokQ0DF294="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_20210803_140412.jpg",
+      "size": 8724,
+      "updated_at": "Thu, 21 Nov 2024 01:34:50 +0000",
+      "source": "aGHLLrTEE+eC2FGZsNIp73Knlrg="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_20211111_123648.jpg",
+      "size": 7984,
+      "updated_at": "Thu, 21 Nov 2024 01:34:51 +0000",
+      "source": "vqolG7Wb7sTgbBmKe1t28yiApK0="
+    },
+    {
+      "path": "fluffy/images/20210803_140412.jpg",
+      "size": 1063270,
+      "updated_at": "Thu, 21 Nov 2024 01:34:52 +0000",
+      "source": "aGHLLrTEE+eC2FGZsNIp73Knlrg="
+    },
+    {
+      "path": "fluffy/images/2724f4af20b4bbf8.png",
+      "size": 87674,
+      "updated_at": "Thu, 21 Nov 2024 01:34:52 +0000",
+      "source": "vOE3W4MSUoooYj9d/qPLPnVo0kM="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_2724f4af20b4bbf8.jpg",
+      "size": 8248,
+      "updated_at": "Thu, 21 Nov 2024 01:34:52 +0000",
+      "source": "vOE3W4MSUoooYj9d/qPLPnVo0kM="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_654_20210614204548.jpg",
+      "size": 12481,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "4nsUsgvNSi2JDkKBA/qZC7U3xMc="
+    },
+    {
+      "path": "fluffy/images/Drawing_3.png",
+      "size": 95998,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "nSenB8TqZhYX0j3P+jPA21VOsrc="
+    },
+    {
+      "path": "fluffy/images/FDb3-BKXoA8NbYF.jpg",
+      "size": 94650,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "R7bNkbezCc/Yxp/aJe4UCLe1mu0="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_Drawing_3.jpg",
+      "size": 13504,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "nSenB8TqZhYX0j3P+jPA21VOsrc="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_FDb3-BKXoA8NbYF.jpg",
+      "size": 9374,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "R7bNkbezCc/Yxp/aJe4UCLe1mu0="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_Fluffy Pastel and Honey Crunch.jpg",
+      "size": 10049,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "CvAEMilV1YZxtCG/cDj54BYBrTs="
+    },
+    {
+      "path": "fluffy/images/20211111_123648.jpg",
+      "size": 1174274,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "vqolG7Wb7sTgbBmKe1t28yiApK0="
+    },
+    {
+      "path": "fluffy/images/Fluffy Pastel and Honey Crunch.jpg",
+      "size": 238307,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "CvAEMilV1YZxtCG/cDj54BYBrTs="
+    },
+    {
+      "path": "fluffy/images/bpff.png",
+      "size": 34235,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "QThtnGSNO10SEKxSv/y/nApHJP0="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_bpff.jpg",
+      "size": 7026,
+      "updated_at": "Thu, 21 Nov 2024 01:34:53 +0000",
+      "source": "QThtnGSNO10SEKxSv/y/nApHJP0="
+    },
+    {
+      "path": "fluffy/thumbnails/thumb_cute ych .jpg",
+      "size": 12583,
+      "updated_at": "Thu, 21 Nov 2024 01:34:54 +0000",
+      "source": "XUizn+kGvebXqzcO3yr4DPDE9bI="
+    },
+    {
+      "path": "fluffy/images/654_20210614204548.png",
+      "size": 323471,
+      "updated_at": "Thu, 21 Nov 2024 01:34:54 +0000",
+      "source": "4nsUsgvNSi2JDkKBA/qZC7U3xMc="
+    },
+    {
+      "path": "fluffy/images/cute ych .png",
+      "size": 107247,
+      "updated_at": "Thu, 21 Nov 2024 01:34:54 +0000",
+      "source": "XUizn+kGvebXqzcO3yr4DPDE9bI="
+    },
+  ],
+  "files": [
+    {
+      "path": "gallery.css",
+      "size": 2016,
+      "updated_at": "Thu, 21 Nov 2024 01:34:54 +0000"
+    },
+    {
+      "path": "gallery.js",
+      "size": 2918,
+      "updated_at": "Thu, 21 Nov 2024 01:34:54 +0000"
+    },
+    {
+      "path": "fluffy/index.html",
+      "size": 4970,
+      "updated_at": "Thu, 21 Nov 2024 01:34:55 +0000"
+    },
+    {
+      "path": "index.html",
+      "size": 793,
+      "updated_at": "Thu, 21 Nov 2024 01:34:55 +0000"
+    },
+    {
+      "path": "manifest.json",
+      "size": -1,
+      "updated_at": "Thu, 21 Nov 2024 01:34:56 +0000"
+    }
+  ]
+}
